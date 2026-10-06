@@ -14,7 +14,7 @@ cask "tinycast" do
     "abue-ammar/tinycast/tinycast-sequoia",
     "abue-ammar/tinycast/tinycast-universal",
   ]
-  depends_on macos: ">= :tahoe"
+  depends_on macos: :tahoe
   depends_on arch: :arm64
 
   app "Tinycast.app"
