@@ -1,7 +1,7 @@
 cask "tinycast" do
   # The stable release workflow updates version and sha256.
-  version "0.11.12"
-  sha256 "5bf7bf0313c2626141a0b3d5af7c028c7210c61fab4648cfc473b4b23e230534"
+  version "0.12.0"
+  sha256 "3993a457b4eb463ad15637c53f85ca019fb6648729b29464bb308ca28e482633"
 
   url "https://github.com/bfpimentel/tinycast/releases/download/v#{version}/Tinycast-#{version}.dmg"
   name "Tinycast"
