@@ -1,0 +1,14 @@
+name: Notify brew-api
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger brew-api cask generation
+        env:
+          GH_TOKEN: ${{ secrets.BREW_API_DISPATCH_TOKEN }}
+        run: gh api repos/bfpimentel/brew-api/dispatches -f event_type=homebrew-tap-updated
