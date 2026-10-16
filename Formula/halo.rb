@@ -12,6 +12,10 @@ class Halo < Formula
   depends_on macos: :sonoma
 
   def install
+    # halo's source says "dev"; the version lives in the git tag (HEAD-<sha> for --HEAD). Tags before 0.5 already
+    # carry it in source, so a missing match is fine.
+    inreplace "Sources/IPC/Protocol.swift", 'static let version = "dev"',
+              "static let version = \"#{version}\"", audit_result: false
     system "swift", "build", "--disable-sandbox", "--configuration", "release", "--product", "halo"
     bin.install ".build/release/halo"
     # Bundler looks for <prefix>/share/halo/runtime/src next to the real binary.
