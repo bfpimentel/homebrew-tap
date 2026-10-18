@@ -2,8 +2,8 @@ class Halo < Formula
   desc "Widget runtime for macOS: bars, panels and HUDs written in TSX"
   homepage "https://github.com/bfpimentel/halo"
   # The halo release workflow updates url and sha256.
-  url "https://github.com/bfpimentel/halo/archive/refs/tags/v0.4.0.tar.gz"
-  sha256 "c673ac08f682c413c73fc3dded4b52143aadd54af5a65472870e23e0d8f433dc"
+  url "https://github.com/bfpimentel/halo/archive/refs/tags/v0.5.0.tar.gz"
+  sha256 "b0f9dd6e8aca2f8f47a864d981dd6f6b6fa77322d45991d450f0c4b31e585150"
   license "GPL-3.0-or-later"
   head "https://github.com/bfpimentel/halo.git", branch: "main"
 
